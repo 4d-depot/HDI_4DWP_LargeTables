@@ -23,21 +23,38 @@ Case of
 		Form:C1466.tabTemplates.index:=0
 		Form:C1466.tabTemplates.currentValue:=Form:C1466.tabTemplates.values[0]
 		
-		
+		Form:C1466.action:="gotoPage"
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Timer:K2:25)
 		
 		SET TIMER:C645(0)
 		
-		$index:=Form:C1466.tabControl.index
-		If ($index=0)
-			FORM GOTO PAGE:C247(1)
-			WParea1:=Form:C1466.documents[$index].comments
-		Else 
-			FORM GOTO PAGE:C247(2)
-			UpdateTemplateSample
-		End if 
+		Case of 
+			: (Form:C1466.action="gotoPage")
+				
+				$index:=Form:C1466.tabControl.index
+				If ($index=0)
+					FORM GOTO PAGE:C247(1)
+					WParea1:=Form:C1466.documents[$index].comments
+				Else 
+					FORM GOTO PAGE:C247(2)
+					Form:C1466.action:="loadSample"
+					OBJECT SET VISIBLE:C603(*; "loading"; True:C214)
+					WParea1:=WP New:C1317
+					WParea2:=WP New:C1317
+					
+					SET TIMER:C645(1)
+				End if 
+				
+			: (Form:C1466.action="loadSample")
+				
+				UpdateTemplateSample
+				OBJECT SET VISIBLE:C603(*; "loading"; False:C215)
+				
+				Form:C1466.action:=""
+				
+		End case 
 		
 		//WP SET DATA CONTEXT(WParea2; New object("company"; Form.companies[0]))
 		//WP COMPUTE FORMULAS(WParea2)

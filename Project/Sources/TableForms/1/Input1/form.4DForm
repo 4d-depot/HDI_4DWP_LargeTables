@@ -253,7 +253,7 @@
 					"type": "write",
 					"top": 130,
 					"left": 380,
-					"width": 960,
+					"width": 1080,
 					"height": 650,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -275,7 +275,7 @@
 				"WPwidget": {
 					"type": "subform",
 					"top": 130,
-					"left": 1380,
+					"left": 1500,
 					"width": 260,
 					"height": 650,
 					"sizingX": "fixed",
@@ -352,7 +352,7 @@
 				},
 				"Splitter1": {
 					"type": "splitter",
-					"left": 1368,
+					"left": 1488,
 					"top": 91,
 					"width": 1,
 					"height": 736,
@@ -390,7 +390,7 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 208,
+	"geometryStamp": 232,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

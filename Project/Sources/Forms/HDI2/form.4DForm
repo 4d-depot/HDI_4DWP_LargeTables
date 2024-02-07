@@ -81,21 +81,15 @@
 		},
 		{
 			"objects": {
-				"Tab Control": {
-					"type": "tab",
-					"text": "Tab control",
-					"top": 60,
-					"left": 680,
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 70,
+					"left": 678,
 					"width": 560,
-					"height": 700,
-					"dataSource": "Form:C1466.tabTemplates",
-					"dataSourceTypeHint": "object",
-					"method": "ObjectMethods/Tab Control.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "grow",
-					"sizingY": "grow"
+					"height": 690,
+					"borderRadius": 6,
+					"fill": "#D4D4D4",
+					"stroke": "transparent"
 				},
 				"btnTrace": {
 					"type": "checkbox",
@@ -125,10 +119,10 @@
 				},
 				"WParea1": {
 					"type": "write",
-					"top": 106,
+					"top": 90,
 					"left": 698,
 					"width": 520,
-					"height": 638,
+					"height": 650,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "WParea1",
@@ -284,16 +278,16 @@
 					"pictureFormat": "scaled",
 					"sizingY": "move"
 				},
-				"Note": {
+				"loading": {
 					"type": "text",
-					"text": "Note: The formula will be displayed as a tip when hovering over the \"S\" symbol.",
-					"top": 87,
-					"left": 60,
-					"width": 575,
-					"height": 16,
-					"stroke": "#1e90ff",
-					"fontWeight": "bold",
-					"sizingY": "fixed"
+					"text": "LOADING SAMPLE",
+					"top": 300,
+					"left": 40,
+					"width": 620,
+					"height": 320,
+					"fontSize": 100,
+					"textAlign": "center",
+					"stroke": "#E6E6E6"
 				}
 			}
 		}
@@ -302,7 +296,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4773,
+	"geometryStamp": 4883,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
