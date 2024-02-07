@@ -169,7 +169,7 @@
 					"width": 140,
 					"height": 20,
 					"sizingY": "move",
-					"text": "Display values",
+					"text": "Test template",
 					"focusable": false,
 					"method": "ObjectMethods/btnHTML1.4dm",
 					"events": [

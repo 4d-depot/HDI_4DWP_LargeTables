@@ -6,8 +6,10 @@ $template:=ds:C1482.Templates.query("name=:1"; $templateName).first()
 WParea2:=$template.wp
 WParea1:=$template.comments
 
-$context:=New object:C1471
-$context.tableDataSource:=Formula from string:C1601($template.dataSource).call()
+Form:C1466.memoDataSource:=$template.dataSource  // as string
 
-WP SET DATA CONTEXT:C1786(WParea2; $context)
-WP COMPUTE FORMULAS:C1707(WParea2)
+//$context:=New object
+//$context.tableDataSource:=Formula from string($template.dataSource).call()
+
+//WP SET DATA CONTEXT(WParea2; $context)
+//WP COMPUTE FORMULAS(WParea2)
