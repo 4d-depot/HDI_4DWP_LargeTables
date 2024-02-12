@@ -89,7 +89,9 @@
 					"height": 690,
 					"borderRadius": 6,
 					"fill": "#D4D4D4",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"sizingX": "grow",
+					"sizingY": "grow"
 				},
 				"btnTrace": {
 					"type": "checkbox",
@@ -224,7 +226,7 @@
 				},
 				"btnSVG": {
 					"type": "button",
-					"top": 810,
+					"top": 969,
 					"left": 40,
 					"width": 120,
 					"height": 20,
@@ -239,8 +241,8 @@
 				},
 				"btnDOCX": {
 					"type": "button",
-					"top": 810,
-					"left": 170,
+					"top": 780,
+					"left": 303,
 					"width": 120,
 					"height": 20,
 					"sizingY": "move",
@@ -256,7 +258,7 @@
 					"type": "checkbox",
 					"text": "Highlight formulas",
 					"top": 807,
-					"left": 340,
+					"left": 844,
 					"width": 176,
 					"height": 26,
 					"events": [
@@ -278,16 +280,20 @@
 					"pictureFormat": "scaled",
 					"sizingY": "move"
 				},
-				"loading": {
-					"type": "text",
-					"text": "LOADING SAMPLE",
-					"top": 300,
+				"btnHTML2": {
+					"type": "button",
+					"top": 810,
 					"left": 40,
-					"width": 620,
-					"height": 320,
-					"fontSize": 100,
-					"textAlign": "center",
-					"stroke": "#E6E6E6"
+					"width": 380,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Print preview",
+					"focusable": false,
+					"method": "ObjectMethods/btnHTML2.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
 				}
 			}
 		}
@@ -296,7 +302,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4883,
+	"geometryStamp": 4922,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

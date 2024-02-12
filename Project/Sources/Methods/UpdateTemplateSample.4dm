@@ -4,9 +4,8 @@ $templateName:="Above"
 
 $template:=ds:C1482.Templates.query("name=:1"; $templateName).first()
 WParea2:=$template.wp
-WParea1:=$template.comments
 
-Form:C1466.memoDataSource:=$template.dataSource  // as string
+//Form.memoDataSource:=$template.dataSource  // as string
 
 //$context:=New object
 //$context.tableDataSource:=Formula from string($template.dataSource).call()

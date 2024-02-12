@@ -18,11 +18,6 @@ Case of
 		Form:C1466.highlight:=False:C215
 		Form:C1466.trace:=False:C215
 		
-		Form:C1466.tabTemplates:=New object:C1471
-		Form:C1466.tabTemplates.values:=ds:C1482.Templates.all().orderBy("number asc").toCollection("name").extract("name")
-		Form:C1466.tabTemplates.index:=0
-		Form:C1466.tabTemplates.currentValue:=Form:C1466.tabTemplates.values[0]
-		
 		Form:C1466.action:="gotoPage"
 		SET TIMER:C645(-1)
 		
@@ -34,24 +29,17 @@ Case of
 			: (Form:C1466.action="gotoPage")
 				
 				$index:=Form:C1466.tabControl.index
-				If ($index=0)
-					FORM GOTO PAGE:C247(1)
-					WParea1:=Form:C1466.documents[$index].comments
-				Else 
-					FORM GOTO PAGE:C247(2)
+				FORM GOTO PAGE:C247($index+1)
+				WParea1:=Form:C1466.documents[$index].comments
+				
+				If ($index=1)
 					Form:C1466.action:="loadSample"
-					OBJECT SET VISIBLE:C603(*; "loading"; True:C214)
-					WParea1:=WP New:C1317
-					WParea2:=WP New:C1317
-					
 					SET TIMER:C645(1)
 				End if 
 				
 			: (Form:C1466.action="loadSample")
 				
 				UpdateTemplateSample
-				OBJECT SET VISIBLE:C603(*; "loading"; False:C215)
-				
 				Form:C1466.action:=""
 				
 		End case 

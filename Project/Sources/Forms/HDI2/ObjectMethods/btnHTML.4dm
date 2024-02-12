@@ -1,6 +1,6 @@
-C_TEXT:C284($Path)
+If (Form:C1466.trace)
+	TRACE:C157
+End if 
 
-$Path:=Get 4D folder:C485(Data folder:K5:33)+"export.html"
-WP EXPORT DOCUMENT:C1337(WParea2; $path; wk web page complete:K81:2; wk normal:K81:7)
+CALL WORKER:C1389("printExport"; "W_PrintExport"; "exportHTML"; OB Copy:C1225(WParea2); ds:C1482.People.all().orderBy("continent asc, country asc, city asc, lastname asc"))
 
-OPEN URL:C673($Path)

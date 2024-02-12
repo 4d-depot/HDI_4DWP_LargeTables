@@ -1,6 +1,5 @@
-C_TEXT:C284($Path)
+If (Form:C1466.trace)
+	TRACE:C157
+End if 
 
-$Path:=Get 4D folder:C485(Data folder:K5:33)+"export.docx"
-WP EXPORT DOCUMENT:C1337(WParea2; $path; wk docx:K81:277)
-
-OPEN URL:C673($Path)
+CALL WORKER:C1389("printExport"; "W_PrintExport"; "exportDocx"; OB Copy:C1225(WParea2); ds:C1482.People.all().orderBy("continent asc, country asc, city asc, lastname asc"))
