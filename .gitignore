@@ -23,6 +23,7 @@ Project/DerivedData/
 # Ignore logs
 #--------------------------------
 Logs/
+Libraries/
 
 #--------------------------------
 # Ignore settings & preferences
