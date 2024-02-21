@@ -72,7 +72,7 @@
 				"Input": {
 					"type": "input",
 					"left": 101,
-					"top": 724,
+					"top": 694,
 					"width": 251,
 					"height": 17,
 					"dataSource": "[Templates:4]name:2",
@@ -83,7 +83,7 @@
 				"Text": {
 					"type": "text",
 					"text": "Name:",
-					"top": 725,
+					"top": 695,
 					"left": 10,
 					"width": 81,
 					"height": 16,
@@ -136,7 +136,7 @@
 					"type": "button",
 					"text": "Previous",
 					"top": 766,
-					"left": 320,
+					"left": 20,
 					"width": 86,
 					"height": 21,
 					"events": [
@@ -150,7 +150,7 @@
 					"type": "button",
 					"text": "Next",
 					"top": 766,
-					"left": 421,
+					"left": 121,
 					"width": 86,
 					"height": 21,
 					"events": [
@@ -160,32 +160,24 @@
 					"sizingX": "fixed",
 					"sizingY": "move"
 				},
-				"Input2": {
-					"type": "input",
-					"left": 479,
-					"top": 724,
-					"width": 71,
-					"height": 17,
-					"dataSource": "[Templates:4]number:6",
+				"Button2": {
+					"type": "button",
+					"text": "TEST",
+					"top": 697,
+					"left": 740,
+					"width": 140,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
 					"sizingY": "move",
-					"dataSourceTypeHint": "integer",
-					"fontWeight": "bold",
-					"stroke": "#008000"
-				},
-				"Text1": {
-					"type": "text",
-					"text": "Order:",
-					"top": 725,
-					"left": 382,
-					"width": 91,
-					"height": 16,
-					"textAlign": "right",
-					"sizingY": "move"
+					"method": "ObjectMethods/Button2.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 161,
+	"geometryStamp": 205,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
