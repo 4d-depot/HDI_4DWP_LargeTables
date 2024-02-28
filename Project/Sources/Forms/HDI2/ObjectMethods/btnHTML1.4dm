@@ -11,7 +11,7 @@ $context:=New object:C1471
 //$context.tableDataSource:=ds.People.all().orderBy("continent asc, country asc, city asc, lastname asc")
 
 
-$context.tableDataSource:=Formula:C1597(SampleData).call()
+$context.tableDataSource:=SampleData  // Formula(SampleData).call()
 If (Shift down:C543)
 	$context.tableDataSource:=ds:C1482.People.all().orderBy("continent asc, country asc, city asc, lastname asc")
 End if 
