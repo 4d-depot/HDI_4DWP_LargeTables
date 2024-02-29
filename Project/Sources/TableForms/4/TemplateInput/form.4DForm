@@ -172,12 +172,38 @@
 					],
 					"sizingX": "fixed",
 					"sizingY": "move",
+					"dataSourceTypeHint": "integer",
+					"fontWeight": "bold",
+					"stroke": "#008000"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Order:",
+					"top": 725,
+					"left": 382,
+					"width": 91,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "SET CONTEXT",
+					"top": 697,
+					"left": 715,
+					"width": 165,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
 					"method": "ObjectMethods/Button2.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 205,
+	"geometryStamp": 166,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

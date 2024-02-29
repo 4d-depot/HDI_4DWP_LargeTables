@@ -75,7 +75,7 @@
 		<field name="name" uuid="B187B8F833504451ABAF14C0E1A6BD08" type="10" limiting_length="255" never_null="true" id="2"/>
 		<field name="wp" uuid="DC3FF222895346C8886A5230A735D1BC" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
 		<primary_key field_name="ID" field_uuid="D7AB1689D6B34AC1B51F977CFAF41E47"/>
-		<table_extra input_form="In" output_form="out">
+		<table_extra input_form="TemplateInput" output_form="TemplateOutput">
 			<editor_table_info displayable_fields_count="3">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="224.1043395996" top="0.86843872070311" width="86" height="104.33203125"/>
