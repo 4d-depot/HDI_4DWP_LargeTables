@@ -2,7 +2,7 @@
 
 Use huge [4D Write Pro](https://us.4d.com/4D-write-pro) tables (4D 20 R5)
 
-Find more information on the [blog post](https://blog.4d.com/).
+Find more information on the [blog post](https://blog.4d.com/hello-would-you-mind-read-and-comment-this-post/).
 
 ## Installing and Using a 4D Project
 
